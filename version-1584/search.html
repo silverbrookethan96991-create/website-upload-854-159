@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>搜索影片 - 最新影片合集-热门影片片库-精选内容持续更新</title>
+  <meta name="description" content="最新影片合集搜索页，支持按片名、地区、类型、标签和年份快速筛选影片。" />
+  <meta name="keywords" content="影片搜索,最新影片合集,热门影片片库,精选内容,最新电影,电影更新,热门影片" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="搜索影片 - 最新影片合集-热门影片片库-精选内容持续更新" />
+  <meta property="og:description" content="最新影片合集搜索页，支持按片名、地区、类型、标签和年份快速筛选影片。" />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav-container">
+    <a class="brand" href="index.html" aria-label="最新影片合集首页">
+      <span class="brand-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" role="img">
+          <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 18.5v-13Zm3 .5v2h2V6H7Zm4 0v2h2V6h-2Zm4 0v2h2V6h-2ZM7 10v4h10v-4H7Zm0 6v2h2v-2H7Zm4 0v2h2v-2h-2Zm4 0v2h2v-2h-2Z" />
+        </svg>
+      </span>
+      <span class="brand-copy">
+        <strong>最新影片合集</strong>
+        <small>热门影片片库 · 精选内容持续更新</small>
+      </span>
+    </a>
+    <div class="desktop-nav">
+      <a class="nav-link" href="index.html">首页</a>
+      <a class="nav-link" href="categories.html">分类总览</a>
+      <a class="nav-link" href="category-guochan.html">国产</a>
+      <a class="nav-link" href="category-rihan.html">日韩</a>
+      <a class="nav-link" href="category-oumei.html">欧美</a>
+      <a class="nav-link" href="category-qita.html">其他</a>
+      <a class="nav-link" href="ranking.html">排行榜</a>
+      <a class="nav-link is-active" href="search.html">搜索</a>
+    </div>
+    <button class="menu-toggle" type="button" aria-label="展开导航" data-menu-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+  <div class="mobile-nav" data-mobile-nav>
+    <a class="mobile-link" href="index.html">首页</a>
+    <a class="mobile-link" href="categories.html">分类总览</a>
+    <a class="mobile-link" href="category-guochan.html">国产</a>
+    <a class="mobile-link" href="category-rihan.html">日韩</a>
+    <a class="mobile-link" href="category-oumei.html">欧美</a>
+    <a class="mobile-link" href="category-qita.html">其他</a>
+    <a class="mobile-link" href="ranking.html">排行榜</a>
+    <a class="mobile-link is-active" href="search.html">搜索</a>
+  </div>
+</header>
+<main>
+<section class="page-hero page-hero--compact">
+  <div class="shell">
+    <span class="eyebrow">Search</span>
+    <h1>搜索与筛选</h1>
+    <p>在完整片库中按片名、地区、类型、标签和年份快速查找影片。</p>
+  </div>
+</section>
+
+<section class="content-section shell search-page">
+  <div class="filter-toolbar">
+  <input type="search" placeholder="搜索片名、简介、标签" data-search-input />
+  <select data-filter-group>
+  <option value="">全部地区</option>
+  <option value="国产">国产</option><option value="日韩">日韩</option><option value="欧美">欧美</option><option value="其他">其他</option>
+</select>
+  <select data-filter-year>
+    <option value="">全部年份</option>
+    <option value="根据片名判断">根据片名判断</option><option value="2029">2029</option><option value="2028">2028</option><option value="2027">2027</option><option value="2026">2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option>
+  </select>
+  <select data-filter-genre>
+    <option value="">全部类型</option>
+    <option value="剧情">剧情</option><option value="喜剧">喜剧</option><option value="悬疑">悬疑</option><option value="动作">动作</option><option value="爱情">爱情</option><option value="奇幻">奇幻</option><option value="惊悚">惊悚</option><option value="犯罪">犯罪</option><option value="家庭">家庭</option><option value="科幻">科幻</option><option value="冒险">冒险</option><option value="恐怖">恐怖</option><option value="历史">历史</option><option value="战争">战争</option><option value="古装">古装</option><option value="动画">动画</option><option value="青春">青春</option><option value="传记">传记</option><option value="音乐">音乐</option><option value="灾难">灾难</option><option value="运动">运动</option><option value="武侠">武侠</option><option value="文艺">文艺</option><option value="心理">心理</option>
+  </select>
+</div>
+  <div class="result-count" data-global-result-count>输入关键词后显示匹配影片</div>
+  <div class="movie-grid movie-grid--six" id="searchResults" aria-live="polite"></div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <section>
+      <div class="footer-brand">
+        <span class="footer-mark">▶</span>
+        <strong>最新影片合集</strong>
+      </div>
+      <p>最新影片合集栏目整理近期更新的电影内容，按类型与热度提供片库浏览。</p>
+    </section>
+    <section>
+      <h2>影片分类</h2>
+      <ul>
+        <li><a href="category-guochan.html">国产影片</a></li>
+        <li><a href="category-rihan.html">日韩影片</a></li>
+        <li><a href="category-oumei.html">欧美影片</a></li>
+        <li><a href="category-qita.html">其他地区</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>热门类型</h2>
+      <ul>
+        <li><a href="genre-juqing.html">剧情</a></li>
+        <li><a href="genre-xiju.html">喜剧</a></li>
+        <li><a href="genre-xuanyi.html">悬疑</a></li>
+        <li><a href="genre-dongzuo.html">动作</a></li>
+        <li><a href="genre-aiqing.html">爱情</a></li>
+        <li><a href="genre-qihuan.html">奇幻</a></li>
+        <li><a href="genre-jingsong.html">惊悚</a></li>
+        <li><a href="genre-fanzui.html">犯罪</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>站内导航</h2>
+      <ul>
+        <li><a href="movies.html">全部影片</a></li>
+        <li><a href="ranking.html">热门排行榜</a></li>
+        <li><a href="search.html">搜索筛选</a></li>
+        <li><a href="categories.html">分类总览</a></li>
+      </ul>
+    </section>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 最新影片合集 · 已整理 2000 部影片内容。</p>
+    <p>静态页面直出，支持电脑与手机浏览。</p>
+  </div>
+</footer>
+<script src="assets/js/site.js" defer></script>
+<script src="assets/js/search-data.js" defer></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
